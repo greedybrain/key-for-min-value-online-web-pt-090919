@@ -1,5 +1,9 @@
 def key_for_min_value(name_hash)
   
+  if name_hash.length == 0 
+    return nil
+  end
+  
   # GET ALL NUMBER VALUES 
   
   num_vals = name_hash.map { | name, num | num }
